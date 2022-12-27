@@ -1,9 +1,10 @@
+import { toImmutable } from '$lib/immutable';
 import { error } from '@sveltejs/kit';
 
-const data = [
+const data = toImmutable([
 	{ id: 1, name: 'sammy', email: 'sammy@email.com' },
 	{ id: 2, name: 'emily', email: 'emily@email.com' }
-];
+]);
 
 class Reading {
 	#columns = '*';
