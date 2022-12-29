@@ -23,6 +23,18 @@
     - [ ] upsert
     - [ ] delete
 
+# Test DB
+
+```
+CREATE TABLE "public"."users" (
+    "id" integer GENERATED ALWAYS AS IDENTITY,
+    "name" text,
+    "email" text,
+    PRIMARY KEY ("id"),
+    UNIQUE ("email")
+);
+```
+
 # Design
 
 example:
